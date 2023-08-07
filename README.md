@@ -21,7 +21,7 @@ This enhances your computer workflow by utilizing a GUI into which you can enter
 2. Download the provided AutoHotkey script and save it to a location on your computer.
 3. If you want to save screenshots using the Python script, install [Pillow](https://pillow.readthedocs.io/en/stable/index.html)
 4. Add a folder to this directory called 'Apps', move any app shortcut you will use here.
-6. Configure the script by modifying keyboard shortcuts, URLs, and paths as needed. (use existing shortcuts as templates)
+6. Configure `UserCommands.ahk` by modifying keyboard shortcuts, URLs, and paths as needed. (use existing shortcuts as templates)
 7. Run the script by double-clicking the `Master.ahk` file or using a method of your choice.
 
 ## Usage
