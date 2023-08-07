@@ -3,7 +3,8 @@ from PIL import ImageGrab
 from datetime import datetime
 
 # Screenshot folder path
-folder_path = f"C:\Users\{os.getlogin()}\OneDrive\Pictures\Screenshots"
+root_drive = os.path.splitdrive(os.path.abspath(__file__))[0]
+folder_path = os.path.join(root_drive, f"Users\\{os.getlogin()}\\OneDrive\\Pictures\\Screenshots")
 
 # Saves image in clipboard to specified screenshot folder
 def save_clipboard_image(folder_path):
