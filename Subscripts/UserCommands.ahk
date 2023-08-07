@@ -157,27 +157,27 @@ else if shortcut = dc ; Open Discord
 else if shortcut = doc ; Documents
 {
     gui_destroy()
-    run C:\Users\%A_Username%\OneDrive\Documents
+    run %A_Drive%\Users\%A_Username%\OneDrive\Documents
 }
 else if shortcut = down ; Downloads
 {
     gui_destroy()
-    run C:\Users\%A_Username%\Downloads
+    run %A_Drive%\Users\%A_Username%\Downloads
 }
 else if shortcut = ss ; Open saved screenshots
 {
     gui_destroy()
-	run C:\Users\%A_Username%\OneDrive\Pictures\Screenshots
+    run %A_Drive%\Users\%A_Username%\OneDrive\Pictures\Screenshots
 }
 else if shortcut = pic ; Open pictures
 {
     gui_destroy()
-	run C:\Users\%A_Username%\OneDrive\Pictures
+    run %A_Drive%\Users\%A_Username%\OneDrive\Pictures
 }
 else if shortcut = dir ; Open script directory
 {
     gui_destroy()
-    Run, %A_ScriptDir%
+    run, %A_ScriptDir%
 }
 
 ;-------------------------------------------------------------------------------
