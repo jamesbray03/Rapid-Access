@@ -208,7 +208,7 @@ else if shortcut = rel ; Reload script
 else if shortcut = edit ; Edit commands
 {
     gui_destroy()
-    run, notepad++.exe "%A_ScriptDir%\GUI\UserCommands.ahk"
+    run, notepad++.exe "%A_ScriptDir%\Subscripts\UserCommands.ahk"
 }
 else if shortcut = ? ; Command list
 {
