@@ -36,10 +36,6 @@ This enhances your computer workflow by utilizing a GUI into which you can enter
 
 Contributions to enhance the functionality or usability of this code are welcome. Please fork the repository, make your improvements, and submit a pull request.
 
-## License
-
-This code is released under the [MIT License](LICENSE).
-
 ---
 
 **Disclaimer:** The script provided here is intended for personal use and may require adjustments to work effectively on your system.
