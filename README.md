@@ -36,6 +36,8 @@ This enhances your computer workflow by utilizing a GUI into which you can enter
 
 Contributions to enhance the functionality or usability of this code are welcome. Please fork the repository, make your improvements, and submit a pull request.
 
----
+## Potential Improvements
 
-**Disclaimer:** The script provided here is intended for personal use and may require adjustments to work effectively on your system.
+ - Implementing a speech to text shortcut
+ - Quick notes that enable and disable with GUI
+ - Replace multiple clipboards with a clipboard history
