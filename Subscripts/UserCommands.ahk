@@ -167,12 +167,12 @@ else if shortcut = down ; Downloads
 else if shortcut = ss ; Open saved screenshots
 {
     gui_destroy()
-    run %A_Drive%\Users\%A_Username%\OneDrive\Pictures\Screenshots
+    run %A_Drive%\Users\%A_Username%\Pictures\Screenshots
 }
 else if shortcut = pic ; Open pictures
 {
     gui_destroy()
-    run %A_Drive%\Users\%A_Username%\OneDrive\Pictures
+    run %A_Drive%\Users\%A_Username%\Pictures
 }
 else if shortcut = dir ; Open script directory
 {
@@ -202,7 +202,7 @@ else if shortcut = q ; Close window
 }
 else if shortcut = rel ; Reload script
 {
-    gui_destroy() ; removes the GUI even when the reload fails
+    gui_destroy(); removes the GUI even when the reload fails
     Reload
 }
 else if shortcut = edit ; Edit commands
