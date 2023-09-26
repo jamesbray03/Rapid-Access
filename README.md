@@ -23,6 +23,7 @@ This enhances your computer workflow by utilizing a GUI into which you can enter
 4. Add a folder to this directory called 'Apps', move any app shortcut you will use here.
 6. Configure `UserCommands.ahk` by modifying keyboard shortcuts, URLs, and paths as needed. (use existing shortcuts as templates)
 7. Run the script by double-clicking the `Master.ahk` file or using a method of your choice.
+8. Adding a shortcut of the `Master.ahk` file to your startup is recommended 
 
 ## Usage
 
