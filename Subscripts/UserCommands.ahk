@@ -75,7 +75,7 @@ else if shortcut = i%A_Space% ; iOS Web Apps
 }
 else if shortcut = p%A_Space% ; Proton Web Apps
 {
-    gui_search_title = Search iOS services
+    gui_search_title = Search Proton services
     gui_search("https://proton.me/REPLACEME")
 }
 else if shortcut = yt%A_Space% ; Search YouTube
