@@ -42,3 +42,6 @@ Contributions to enhance the functionality or usability of this code are welcome
  - Implementing a speech to text shortcut
  - Quick notes that enable and disable with GUI
  - Replace multiple clipboards with a clipboard history
+ - Installation process
+ - Remove user interaction with code, make adding shortcuts a feature
+ - Platform diversity
