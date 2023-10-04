@@ -14,34 +14,37 @@ This enhances your computer workflow by utilizing a GUI into which you can enter
 - **App Launching:** Launch commonly used apps instantly by triggering predefined shortcuts.
 - **Folder Access:** Access frequently used folders on your system with minimal effort.
 - **Window Locking** Includes an 'always on top' feature to manage open windows conveniently.
+- **Custom Shortcuts** Add and remove custon shortcuts using hotkeys 'add' and 'rem'.
 
 ## Getting Started
 
-1. Install [AutoHotkey](https://www.autohotkey.com/) on your computer if you haven't already.
-2. Download the provided AutoHotkey script and save it to a location on your computer.
-3. If you want to save screenshots using the Python script, install [Pillow](https://pillow.readthedocs.io/en/stable/index.html)
-4. Add a folder to this directory called 'Apps', move any app shortcut you will use here.
-6. Configure `UserCommands.ahk` by modifying keyboard shortcuts, URLs, and paths as needed. (use existing shortcuts as templates)
-7. Run the script by double-clicking the `Master.ahk` file or using a method of your choice.
-8. Adding a shortcut of the `Master.ahk` file to your startup is recommended 
+1. Install `Rapid-Access-Setup.exe` from the most recent release.
+2. Run as administrator
+3. Test and report bugs and improvements
 
 ## Usage
 
 - To use the shortcut press CapsLock to toggle GUI.
 - In the GUI, should you wish you see your shortcuts, type '?'.
 - In order to use CapsLock for its original purpose, use Alt + CapsLock instead.
-- 'Always on top' feature is toggled on the active window by Ctrl + Space.
+- The 'Always on top' feature is toggled on the active window by Ctrl + Space.
 - Refer to the script's comments for guidance on configuring and customizing different sections.
 
 ## Contributing
 
 Contributions to enhance the functionality or usability of this code are welcome. Please fork the repository, make your improvements, and submit a pull request.
 
-## Potential Improvements
+## Known Issues/Improvements
 
- - Implementing a speech to text shortcut
+ - Implementing a speech-to-text shortcut
  - Quick notes that enable and disable with GUI
  - Replace multiple clipboards with a clipboard history
- - Installation process
- - Remove user interaction with code, make adding shortcuts a feature
  - Platform diversity
+ - File manipulation only works if user is admin
+ - Change proton links to 'REPLACEME.proton.me'
+ - Change brave search to Google search
+ - Add shortcut script isn't running
+ - Potentially change the opening hotkey from CapsLock
+ - Scale help menu
+ - Change the Python logo on Tkinter apps
+ - THE USAGE README
