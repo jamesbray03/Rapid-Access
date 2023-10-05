@@ -47,4 +47,5 @@ Contributions to enhance the functionality or usability of this code are welcome
  - Potentially change the opening hotkey from CapsLock
  - Scale help menu
  - Change the Python logo on Tkinter apps
+ - Add hidden REPLACEME feature for custom dynamic link searching
  - THE USAGE README
