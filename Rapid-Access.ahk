@@ -1,12 +1,16 @@
 ﻿;-------------------------------------------------------------------------------
 ;;; INIT ;;;
-;   Called from master to initialise gui parameters
+;	Include and run necessary scripts
 ;-------------------------------------------------------------------------------
 
-gui_init:
-    gui_options := "xm w220 " . "cc5c8c6" . " -E0x200"
-    gui_state = closed
-    return
+#NoEnv
+#SingleInstance force
+
+SendMode Input
+SetWorkingDir %A_ScriptDir%
+
+gui_options := "xm w220 " . "cD2D4D3" . " -E0x200"
+gui_state := closed
 
 ;-------------------------------------------------------------------------------
 ;;; LAUNCH GUI ;;;
@@ -21,12 +25,12 @@ CapsLock::
 	}
 	gui_state := "main"
 	Gui, Margin, 16, 16
-	Gui, Color, 1d1f21, 282a2e
+	Gui, Color, 1D1D21, 2C2F33
 	Gui, +AlwaysOnTop -SysMenu +ToolWindow -Caption +Border
 	Gui, Font, s11, Segoe UI
 	Gui, Add, Text, %gui_options% vgui_main_title, Rapid Access
 	Gui, Font, s10, Segoe UI
-	Gui, Add, Edit, %gui_options% vshortcut gFindus
+	Gui, Add, Edit, %gui_options% vshortcut gon_edit
 	Gui, Show, , myGUI
 	return
 
@@ -35,7 +39,7 @@ CapsLock::
 ;   Generates a search bar after initial prompt
 ;-------------------------------------------------------------------------------
 
-; Global function called from 'UserCommands.ahk'
+; Global function called from command scripts
 gui_search(url) 
 {
     global
@@ -60,17 +64,8 @@ gui_add_search:
 gui_search_enter:
     Gui, Submit
     gui_destroy()
-	
-    ; Check if its a clipboard call or a search
-    if (RegExMatch(gui_search_content, "^\d+$"))
-    {
-        copy_to_clip(gui_search_content)
-    }
-    else
-    {
-		StringReplace, search_final_url, search_url, REPLACEME, % validate_url(gui_search_content)
-		run %search_final_url%
-    }
+    StringReplace, search_final_url, search_url, REPLACEME, % validate_url(gui_search_content)
+    run %search_final_url%
     return
 
 ;-------------------------------------------------------------------------------
@@ -84,9 +79,9 @@ GuiEscape:
     return
 
 ; The callback function when the text changes in the input field.
-Findus:
+on_edit:
     Gui, Submit, NoHide
-    #Include %A_ScriptDir%\Subscripts\UserCommands.ahk
+    #Include %A_ScriptDir%\Hotkeys\BuiltinHotkeys.ahk
     return
 
 #WinActivateForce
