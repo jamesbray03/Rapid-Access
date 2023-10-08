@@ -24,7 +24,7 @@ Rapid Access is a powerful shortcut management tool that allows you to create an
     </tr>
     <tr>
         <td>
-           <img src="https://github.com/James-Bray19/Rapid-Access/assets/47334864/9e8c0e15-9fe4-430f-b255-05868fe1da6c" height="100">
+           <img src="https://github.com/James-Bray19/Rapid-Access/assets/47334864/9e8c0e15-9fe4-430f-b255-05868fe1da6c">
         </td>
         <td>
             <ul>
