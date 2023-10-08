@@ -58,13 +58,8 @@ Rapid Access is a powerful shortcut management tool that allows you to create an
 
 <img src="https://github.com/James-Bray19/Rapid-Access/assets/47334864/0177608d-a899-4dc6-86da-7f23ee67fe6d" height="300">
 
-### Terminating the App
-
-- **Stop Rapid Access**: If you need to stop Rapid Access from running, simply press the "Terminate App" button in the "App Settings" tab.
-
-### Uninstalling Rapid Access
-
-- **Uninstallation Note**: Note that uninstalling the app is only available when it's installed with the setup package (coming soon). To uninstall, press the "Uninstall" button in the "Advanced Features" tab.
+- **Terminating the App**: If you need to stop Rapid Access from running, simply press the "Terminate App" button in the "App Settings" tab.
+- **Uninstalling Rapid Access**: Note that uninstalling the app is only available when it's installed with the setup package (coming soon). To uninstall, press the "Uninstall" button in the "Advanced Features" tab.
 
 ## Coming Soon
 
