@@ -124,18 +124,6 @@ def terminate():
     else:
         messagebox.showinfo('Failed', 'Unable to find current process')
 
-# uninstalls app
-def uninstall():
-    proceeding = messagebox.askyesno('Proceed?', 'Are you sure you want to uninstall Rapid Access?')
-    if proceeding:
-        for process in psutil.process_iter(['pid', 'name']):
-            if process.info['name'].startswith('AutoHotkey'):
-                pid = process.info['pid']
-                psutil.Process(pid).terminate()
-
-        root.after(1, subprocess.run(uninstall_path, shell=True, check=True))
-        root.quit()
-
 # search file explorer for a file path
 def browse_file(output):
     selected_file = filedialog.askopenfilename()
@@ -370,11 +358,6 @@ if True:
             frame2.pack(pady=12, fill='x')
             ttk.Button(frame2, text="Terminate App", style='Custom.TButton', command=lambda: terminate()).pack(fill='x')
             ttk.Label(frame2, style="Custom.TLabel", font=('Segoe UI', 8), foreground=dark_text, text="stops running current instance").pack()
-
-            frame2 = ttk.Frame(frame, style='Custom.TFrame')
-            frame2.pack(pady=12, fill='x')
-            ttk.Button(frame2, text="Uninstall", style='Custom.TButton', command=lambda: uninstall()).pack(fill='x')
-            ttk.Label(frame2, style="Custom.TLabel", font=('Segoe UI', 8), foreground=dark_text, text="uninstalls the app and its contents").pack()
             
     tabs.pack(fill="both", expand=True, padx=5, pady=5)
     root.mainloop()
