@@ -6,7 +6,8 @@ Rapid Access is a powerful shortcut management tool that allows you to create an
 
 1. **Download**: Download the code as a `.zip` file.
 2. **Extract**: Extract the contents to a location of your choice.
-3. **Run**: Once extracted, run the `Rapid-Access.ahk` file.
+3. **Install AHK**: Ensure you have [AutoHotKey](https://www.autohotkey.com/) installed on your device.
+5. **Run**: Once extracted, run the `Rapid-Access.ahk` file with AutoHotKey.
 
 ## Coming Soon
 
