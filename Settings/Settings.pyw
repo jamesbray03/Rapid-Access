@@ -71,7 +71,15 @@ def add_hotkey(hotkey, comment, link):
         return
 
     # ahk template for the usercommands script
-    template = f"""
+    if "REPLACEME" in link:
+        template = f"""
+else if shortcut = {hotkey}%A_Space% ; {comment}
+{{
+    gui_search_title = {comment}:
+    gui_search("{link}")
+}}"""
+    else:
+        template = f"""
 else if shortcut = {hotkey} ; {comment}
 {{
     gui_destroy()
