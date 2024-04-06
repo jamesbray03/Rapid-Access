@@ -27,6 +27,7 @@ def get_script_hotkeys(script_path):
     hotkeys = []
     for match in matches:
         hotkey, comment = match
+        hotkey = hotkey.replace('%A_Space%', '[space]')
         hotkeys.append({'hotkey': hotkey, 'comment': comment})
 
     return hotkeys
