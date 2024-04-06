@@ -10,7 +10,7 @@ if shortcut = ? ; Open Settings
 }
 else if shortcut = %A_Space% ; Google search
 {
-    gui_search_title = Search Brave
+    gui_search_title = Google search
     gui_search("https://www.google.com/search?&q=REPLACEME")
 }
 else if shortcut = q ; Close active window
