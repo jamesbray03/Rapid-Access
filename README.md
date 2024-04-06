@@ -12,9 +12,6 @@ Rapid Access is a powerful shortcut management tool that allows you to create an
 ## Coming Soon
 
 - **Setup Installer**: Installer to make the process of getting started easier and cleaner.
-- **Dynamic Link Searching**: Add a web link with a 'REPLACEME' to search within a link, e.g.
-    - `https://www.google.com/search?q=REPLACEME` to search Google for a custom phrase
-    - `https://www.youtube.com/results?search_query=REPLACEME` to search YouTube for a custom phrase
 - **Clipboard Manager**: Builtin hotkeys for managing multiple shortcuts (useful for coding)
 
 ## Using Rapid Access
@@ -68,6 +65,26 @@ Rapid Access is a powerful shortcut management tool that allows you to create an
                 </ul>
                 <li><strong>Add Hotkey:</strong> Once you've filled in all the details, press the "Add Hotkey" button.</li>
                 <li><strong>Reload:</strong> Remember to reload the script using the `rel` hotkey after making any changes to custom shortcuts, as the custom table updates dynamically, but the script itself doesn't.</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <th colspan="2">Dynamic Link Searching (DLS)</th>
+    </tr>
+        <tr>
+        <td>
+           <img src="https://github.com/James-Bray19/Rapid-Access/assets/47334864/cb1c4e37-2bfa-41fc-a341-b081266e952d">
+        </td>
+        <td>
+            <ul>
+                <li><strong>Navigate to "Add Hotkey":</strong> In the "Settings" window, go to the "Add Hotkey" tab.</li>
+                <li><strong>Add a web link with a 'REPLACEME' to search within a link, e.g.:</strong></li>
+                <ul>
+                    <li><strong>Search YouTube:</strong> https://www.youtube.com/results?search_query=REPLACEME</li>
+                    <li><strong>Open Google app:</strong> `https://REPLACEME.google.com/` to search YouTube for a custom phrase</li>
+                </ul>
+                <li><strong>Add Hotkey:</strong> Once you've filled in all the details, press the "Add Hotkey" button.</li>
+                <li><strong>Reload:</strong> Once added, reload the script. To use DLS, type your shortcut followed by a space.</li>
             </ul>
         </td>
     </tr>
